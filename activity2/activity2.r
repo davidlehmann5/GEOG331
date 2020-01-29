@@ -98,3 +98,23 @@ hist(datW$TAVE[datW$siteN == 1],
      ylab="Relative frequency",
      col="grey50",
      border="white")
+
+#add the mean and standard deviation to better understand the histogram
+#mean, col is the color, lwd is the thickness of the line
+
+abline(v = mean(datW$TAVE[datW$siteN == 1], na.rm = TRUE), 
+          col = "tomato3",
+          lwd = 3)
+
+#add the standard deviation line below the mean
+
+abline(v = mean(datW$TAVE[datW$siteN == 1], na.rm = TRUE)-sd(datW$TAVE[datW$siteN == 1], na.rm = TRUE),
+       col = "tomato3",
+       lty = 3,
+       lwd = 3)
+
+#standard deviation line above the mean
+abline(v = mean(datW$TAVE[datW$siteN == 1],na.rm=TRUE) + sd(datW$TAVE[datW$siteN == 1],na.rm=TRUE), 
+       col = "tomato3", 
+       lty = 3,
+       lwd = 3)
