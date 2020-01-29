@@ -44,6 +44,9 @@ Mat.bycol[,2]
 #read in weather station file from the data folder
 datW <- read.csv("y:\\Students\\hkropp\\a02\\2011124.csv")
 
+#view the data by clicking on it in the global enviornment
+#get more information about the data frame
+
 
 
 
